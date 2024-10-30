@@ -1,0 +1,117 @@
+<div id="page-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12" style="display: flex;">
+        <h1 class="page-header">Ajouter student</h1>
+        <div style="padding-top: 50px ; margin-left:60%;  ">
+          <a routerLink="/student">
+            <i data-feather="arrow-left" width="100" > retour</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <section id="multiple-column-form">
+      <div class="row match-height">
+        <div class="col-12">
+          <div class="card">
+
+
+            <div class="card-content">
+              <div class="card-body">
+                <form class="form">
+                  <div class="row">
+                    <!-- Champ pour le prénom -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="prenom-column">Prénom</label>
+                        <input type="text" id="prenom-column" class="form-control" placeholder="Prénom" name="prenom-column">
+                      </div>
+                    </div>
+                    <!-- Champ pour le nom -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="nom-column">Nom</label>
+                        <input type="text" id="nom-column" class="form-control" placeholder="Nom" name="nom-column">
+                      </div>
+                    </div>
+                    <!-- Boutons pour le choix du genre (Homme ou Femme) -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <div class="d-flex align-items-center" style="display: flex;">
+                          <div class="custom-control custom-radio mr-4">
+                            <input type="radio" id="homme" name="genre" class="custom-control-input" value="Homme">
+                            <label class="custom-control-label" for="homme">Homme</label>
+                          </div>
+                          <div class="custom-control custom-radio ml-5" style="padding-left: 20px">
+                            <input type="radio" id="femme" name="genre" class="custom-control-input" value="Femme">
+                            <label class="custom-control-label" for="femme">Femme</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Champ pour la date de naissance -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="date-naissance">Date de Naissance</label>
+                        <input type="date" id="date-naissance" class="form-control" name="date-naissance">
+                      </div>
+                    </div>
+                    <!-- Champ pour le matricule -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="matricule-column">Matricule</label>
+                        <input type="text" id="matricule-column" class="form-control" placeholder="Matricule" name="matricule-column">
+                      </div>
+                    </div>
+                    <!-- Champ pour la sélection de la classe -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="classe">Classe</label>
+                        <select id="classe" class="form-control" name="classe">
+                          <option value="">Sélectionner la classe</option>
+                          <option value="classe1">Tle</option>
+                          <option value="classe2">1 ere</option>
+                          <option value="classe3">2 nd</option>
+                          <option value="classe3">3 eme</option>
+                          <option value="classe3">4 eme</option>
+                          <option value="classe3">5 eme</option>
+                          <option value="classe3">6 eme</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- Champ pour le téléphone -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="telephone-column">Téléphone</label>
+                        <input type="text" id="telephone-column" class="form-control" placeholder="Téléphone" name="telephone-column">
+                      </div>
+                    </div>
+                    <!-- Champ pour la ville -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="ville-column">Ville</label>
+                        <input type="text" id="ville-column" class="form-control" placeholder="Ville" name="ville-column">
+                      </div>
+                    </div>
+                    <!-- Boutons d'action agrandis, écartés, et centrés -->
+                    <div class="col-12 d-flex  mt-4" style="padding-left: 30%;">
+                      <button type="reset" class="btn btn-light-secondary mr-4" style="width: 150px;">Annuler</button>
+                      <button type="submit" class="btn btn-primary ml-4" style="width: 150px;">Enregistrer</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+</div>

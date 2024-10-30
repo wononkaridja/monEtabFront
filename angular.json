@@ -23,13 +23,32 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/assets"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+                "public/css/dataTables/dataTables.bootstrap.css",
+                "public/css/dataTables/dataTables.responsive.css",
+                "public/css/bootstrap.min.css",
+                "public/css/bootstrap-theme.min.css",
+                 "public/css/bootstrap-social.css",
+                "public/css/metisMenu.min.css",
+                "public/css/morris.css",
+                "public/css/startmin.css",
+                "public/css/timeline.css"
             ],
-            "scripts": []
+            "scripts": [
+              "public/js/bootstrap.min.js",
+              "public/js/flot-data.js",
+              "public/js/metisMenu.min.js",
+              "public/js/morris.min.js",
+              "public/js/morris-data.js",
+              "public/js/raphael.min.js",
+              "public/js/startmin.js",
+              "public/js/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
